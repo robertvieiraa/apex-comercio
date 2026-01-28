@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --primaria: #02B25F;
+    --grey-1: #F0F1F2;
+    --texto: #333;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 12px 24px;
+}
+
+div#header-container {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+menu > a {
+    text-decoration: none;
+    color: var(--texto);
+    margin-left: 24px;
+}
+
+menu > a#button-entrar {
+    border: 1px solid rgba(51, 51, 51, 0.250);
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 10px 15px;
+}
+
+menu > a#button-experimente {
+    background-color: var(--primaria);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 11px 15px;
+}
+
+main {
+    background-color: var(--grey-1);
+    padding: 100px 24px 0px 24px;
+}
+
+main > div#chip {
+    background-color: #fff;
+    padding: 5.5px 12px 5.5px 0px;
+    border-radius: 20px;
+    display: inline;
+}
+
+div#chip > p {
+    display: inline;
+    margin-left: 10px;
+}
+
+div#chip > div#bg-verde {
+    background-color: #D8EDE4;
+    color: var(--primaria);
+    display: inline;
+    padding: 5.5px 12px;
+    border-radius: 20px;
+}
+
+div#bg-verde > p {
+    display: inline;
+}
