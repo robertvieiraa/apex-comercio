@@ -5,12 +5,16 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
     --primaria: #02B25F;
     --grey-1: #F0F1F2;
     --texto: #333;
+
+    --h1: 500 40px 'Montserrat';
+    --body1: 500 18px 'Montserrat';
 }
 
 body {
@@ -28,6 +32,7 @@ div#header-container {
 }
 
 menu {
+    position: relative;
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -56,24 +61,34 @@ menu > a#button-experimente {
     padding: 11px 15px;
 }
 
-main {
+main > section#hero {
     background-color: var(--grey-1);
     padding: 100px 24px 0px 24px;
+    text-align: center;
 }
 
-main > div#chip {
+div#hero-text {
+    max-width: 1012px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+div#hero-text > div.chip {
+    display: inline-block;
     background-color: #fff;
     padding: 5.5px 12px 5.5px 0px;
     border-radius: 20px;
-    display: inline;
+    margin-bottom: 24px;
+    border: 1px solid #D8EDE4;
+    font: var(--body1);
 }
 
-div#chip > p {
+div.chip > p {
     display: inline;
     margin-left: 10px;
 }
 
-div#chip > div#bg-verde {
+div.bg-verde {
     background-color: #D8EDE4;
     color: var(--primaria);
     display: inline;
@@ -81,6 +96,50 @@ div#chip > div#bg-verde {
     border-radius: 20px;
 }
 
-div#bg-verde > p {
+div.bg-verde > p {
     display: inline;
 }
+
+div#hero-text > h1 {
+    font: var(--h1);
+    color: var(--texto);
+    margin-bottom: 24px;
+}
+
+div#hero-text > p {
+    font: var(--body1);
+    color: var(--texto);
+    margin-bottom: 24px;
+}
+
+div#hero-buttons > a {
+    padding: 6px 16px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.150);
+    font: var(--body1);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+div#hero-buttons > #button-testar {
+    margin-right: 10px;
+    background-color: var(--primaria);
+    color: #fff;
+}
+
+div#hero-buttons > #button-demo {
+    background-color: #fff;
+    color: var(--texto);
+}
+
+section#hero > img {
+    height: 405px;
+}
+
+/* section#hero > div#gradiente {
+    position: absolute;
+    background-image: linear-gradient(to top, white, transparent);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50vh;
+} */
