@@ -12,9 +12,10 @@
     --primaria: #02B25F;
     --grey-1: #F0F1F2;
     --texto: #333;
-
     --h1: 500 40px 'Montserrat';
+    --h2: 500 32px 'Montserrat';
     --body1: 500 18px 'Montserrat';
+    --body2: 500 16px 'Montserrat';
 }
 
 body {
@@ -32,7 +33,6 @@ div#header-container {
 }
 
 menu {
-    position: relative;
     flex-grow: 1;
     display: flex;
     justify-content: flex-end;
@@ -62,21 +62,22 @@ menu > a#button-experimente {
 }
 
 main > section#hero {
+    position: relative;
     background-color: var(--grey-1);
     padding: 100px 24px 0px 24px;
     text-align: center;
 }
 
-div#hero-text {
+div.hero-text {
     max-width: 1012px;
     margin: auto;
     margin-bottom: 64px;
 }
 
-div#hero-text > div.chip {
+div.hero-text > div.chip {
     display: inline-block;
     background-color: #fff;
-    padding: 5.5px 12px 5.5px 0px;
+    padding-right: 12px;
     border-radius: 20px;
     margin-bottom: 24px;
     border: 1px solid #D8EDE4;
@@ -89,24 +90,25 @@ div.chip > p {
 }
 
 div.bg-verde {
+    display: inline-block;
     background-color: #D8EDE4;
     color: var(--primaria);
-    display: inline;
     padding: 5.5px 12px;
     border-radius: 20px;
+    font: var(--body1);
 }
 
 div.bg-verde > p {
     display: inline;
 }
 
-div#hero-text > h1 {
+div.hero-text > h1 {
     font: var(--h1);
     color: var(--texto);
     margin-bottom: 24px;
 }
 
-div#hero-text > p {
+div.hero-text > p {
     font: var(--body1);
     color: var(--texto);
     margin-bottom: 24px;
@@ -132,14 +134,72 @@ div#hero-buttons > #button-demo {
 }
 
 section#hero > img {
-    height: 405px;
+    height: 420px;
 }
 
-/* section#hero > div#gradiente {
+section#hero > div#gradiente {
     position: absolute;
-    background-image: linear-gradient(to top, white, transparent);
-    left: 0;
     bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to top, #fff, transparent);
     width: 100%;
     height: 50vh;
-} */
+}
+
+main > section#clientes {
+    text-align: center;
+    padding: 100px 24px;
+}
+
+section#clientes > div.clientes-text {
+    margin: auto;
+    max-width: 769px;
+}
+
+div.clientes-text > div.bg-verde {
+    margin-bottom: 24px;
+}
+
+div.clientes-text > h2 {
+    font: var(--h2);
+    margin-bottom: 24px;
+}
+
+div.clientes-text > p {
+    font: var(--body1);
+}
+
+span.texto-verde {
+    color: var(--primaria);
+}
+
+div.linha-horizontal {
+    margin: auto;
+    width: 1000px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+main > section#sobre {
+    padding: 100px 24px;
+}
+
+section#sobre > div#container-sobre {
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+}
+
+div.sobre-text > div.bg-verde {
+    margin-bottom: 24px;
+}
+
+div.sobre-text > h2 {
+    font: var(--h2);
+    margin-bottom: 24px;
+}
+
+div.sobre-text > p {
+    font: var(--body2);
+    line-height: 150%;
+}
