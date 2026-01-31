@@ -10,12 +10,16 @@
 
 :root {
     --primaria: #02B25F;
+    --green2: #D8EDE4;
     --grey-1: #F0F1F2;
     --texto: #333;
     --h1: 500 40px 'Montserrat';
     --h2: 500 32px 'Montserrat';
+    --h4: 600 24px 'Montserrat';
+    --h6: bold 16px 'Montserrat';
     --body1: 500 18px 'Montserrat';
     --body2: 500 16px 'Montserrat';
+    --body3: 14px 'Montserrat';
 }
 
 body {
@@ -80,7 +84,7 @@ div.hero-text > div.chip {
     padding-right: 12px;
     border-radius: 20px;
     margin-bottom: 24px;
-    border: 1px solid #D8EDE4;
+    border: 1px solid var(--green2);
     font: var(--body1);
 }
 
@@ -91,7 +95,7 @@ div.chip > p {
 
 div.bg-verde {
     display: inline-block;
-    background-color: #D8EDE4;
+    background-color: var(--green2);
     color: var(--primaria);
     padding: 5.5px 12px;
     border-radius: 20px;
@@ -186,6 +190,7 @@ main > section#sobre {
 
 section#sobre > div#container-sobre {
     display: flex;
+    align-items: center;
     max-width: 1200px;
     margin: auto;
 }
@@ -202,4 +207,39 @@ div.sobre-text > h2 {
 div.sobre-text > p {
     font: var(--body2);
     line-height: 150%;
+    margin-bottom: 48px;
+}
+
+div.sobre-itens > div.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+div.item > div.numero-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: var(--green2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font: var(--h4);
+    color: var(--primaria);
+    margin-right: 20px;
+}
+
+div.item-text > h6 {
+    font: var(--h6);
+    margin-bottom: 5px;
+}
+
+div.item-text > p {
+    font: var(--body3);
+    line-height: 150%;
+}
+
+div#container-sobre > img {
+    height: 335px;
 }
