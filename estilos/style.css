@@ -16,7 +16,7 @@
     --h1: 500 40px 'Montserrat';
     --h2: 500 32px 'Montserrat';
     --h4: 600 24px 'Montserrat';
-    --h6: bold 16px 'Montserrat';
+    --h6: bold 16px/1.4em 'Montserrat';
     --body1: 500 18px 'Montserrat';
     --body2: 500 16px 'Montserrat';
     --body3: 14px 'Montserrat';
@@ -63,6 +63,11 @@ menu > a#button-experimente {
     font-weight: bold;
     border-radius: 8px;
     padding: 11px 15px;
+}
+
+section h2 {
+    font: var(--h2);
+    margin-bottom: 24px;
 }
 
 main > section#hero {
@@ -164,11 +169,6 @@ div.clientes-text > div.bg-verde {
     margin-bottom: 24px;
 }
 
-div.clientes-text > h2 {
-    font: var(--h2);
-    margin-bottom: 24px;
-}
-
 div.clientes-text > p {
     font: var(--body1);
 }
@@ -196,11 +196,6 @@ section#sobre > div#container-sobre {
 }
 
 div.sobre-text > div.bg-verde {
-    margin-bottom: 24px;
-}
-
-div.sobre-text > h2 {
-    font: var(--h2);
     margin-bottom: 24px;
 }
 
@@ -242,4 +237,40 @@ div.item-text > p {
 
 div#container-sobre > img {
     height: 335px;
+}
+
+main > section#features {
+    padding: 100px 24px;
+}
+
+section#features > div.features-text {
+    max-width: 824px;
+    margin: auto;
+    text-align: center;
+}
+
+div.features-text > p {
+    font: var(--body2);
+    line-height: 150%;
+    margin-bottom: 48px;
+}
+
+section#features > div#container-features {
+    margin: auto;
+    max-width: 824px;
+    display: grid;
+    grid-template: 100px 100px / auto auto auto;
+    gap: 40px;
+}
+
+div#container-features > div.feature {
+    text-align: center;
+}
+
+div.feature > h6 {
+    font: var(--h6);
+}
+
+div.feature > p {
+    font: var(--body3);
 }
